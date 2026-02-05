@@ -1,5 +1,5 @@
 # clean base image containing only comfyui, comfy-cli and comfyui-manager
-FROM runpod/worker-comfyui:5.5.1-base
+FROM runpod/worker-comfyui:5.7.1-base
 
 # install custom nodes into comfyui
 # Could not resolve unknown custom node MarkdownNote (unknown_registry entry has no aux_id) - skipped
