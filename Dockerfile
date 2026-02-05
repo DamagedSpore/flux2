@@ -12,3 +12,4 @@ RUN comfy model download --url https://huggingface.co/Comfy-Org/flux2-dev/resolv
 
 # copy all input data (like images or videos) into comfyui (uncomment and adjust if needed)
 # COPY input/ /comfyui/input/
+# 1
