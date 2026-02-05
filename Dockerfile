@@ -1,5 +1,8 @@
 # clean base image containing only comfyui, comfy-cli and comfyui-manager
 FROM runpod/worker-comfyui:5.7.1-base
+
+RUN cd /comfyui && git pull origin master
+RUN pip install --upgrade -r /comfyui/requirements.txt
 # install custom nodes into comfyui
 # Could not resolve unknown custom node MarkdownNote (unknown_registry entry has no aux_id) - skipped
 # download models into comfyui (Comfy-Org versions - compatible with ComfyUI)
